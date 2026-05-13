@@ -55,6 +55,24 @@
 
 ---
 
+### `/save-slack-log` — Slackログまとめ保存
+
+指定したSlackチャンネルの直近の議論を読んで、決定事項・論点・ネクストアクションを整形してファイルに保存しGitHubにpushする。
+
+**使い方：**
+```
+/save-slack-log
+
+【チャンネル】#チャンネル名
+【期間】（任意：例 "直近3日" "先週" デフォルトは直近7日）
+```
+
+**関連ファイル：**
+- コマンド定義：`.claude/commands/save-slack-log.md`
+- 保存先：`docs/slack-logs/YYYY-MM-DD-{チャンネル名}.md`
+
+---
+
 ## Claude への依頼例
 
 ```
